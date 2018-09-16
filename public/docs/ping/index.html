@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Comfortaa|PT+Mono" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../../">Home</a></li>
+            <li><a href="../">Docs</a></li>
+            <ul>
+                <li><a href="./" class="selected">Ping</a></li>
+                <li><a href="../authenticate/">Authenticate</a></li>
+                <li><a href="#">item</a></li>
+            </ul>
+            <li><a href="../../settings/">Settings</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>Ping</h1>
+        </div>
+
+        <p>
+            <a href="../../api/v1/ping" class="pop">Ping</a> is just a useless thing to check the <span class="pop">latency</span> of the API.
+        </p>
+
+        <pre>
+<span class="function">const</span> <span class="var">request</span> = <span class="function_name">require</span>(<span class="string">'request'</span>);
+<span class="function_name">request</span>(<span class="string">`http://86.93.252.37:8080/api/v1/ping`</span>, (<span class="var">error</span>, <span class="var">response</span>) <span class="function">=></span> {
+    <span class="comment">// handle everyting ...</span>
+});</pre>
+
+        <p>
+            The returned <code><span class="var">response</span></code> should look simular to this:
+        </p>
+
+        <pre>
+{
+    <span class="var">body</span>: {
+        <span class="var">ping</span>: <span class="string">"165ms"</span>,
+        <span class="var">error</span>: <span class="string">"possible error"</span>
+    }
+}</pre>
+    </main>
+
+    <script>
+        var idk = window.localStorage.getItem('darkMode')
+        switch(idk) {
+            case null: {
+                window.localStorage.setItem('darkMode', false)
+                var element = document.querySelector('body')
+                element.classList.remove('dark')
+                break
+            }
+            case 'true': {
+                var element = document.querySelector('body')
+                element.classList.add('dark')
+                break
+            }
+            case 'false': {
+                var element = document.querySelector('body')
+                element.classList.remove('dark')
+                break
+            }
+        }
+    </script>
+</body>
+</html>
