@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Comfortaa|PT+Mono" rel="stylesheet"> 
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../../../../">Home</a></li>
+            <li><a href="../../../docs">Docs</a></li>
+            <ul>
+                <li><a href="../../ping">Ping</a></li>
+                <li><a href="../">Authenticate</a></li>
+                <ul>
+                    <li><a href="./" class="selected">sessionid</a></li>
+                </ul>
+                <li><a href="#">item</a></li>
+            </ul>
+            <li><a href="../../../settings">Settings</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>Session Id</h1>
+        </div>
+
+        <p>
+            <span class="pop">Session id</span> is an id which you can use to get acces to special parts of the API, so get one!
+        </p>
+
+        <pre>
+{
+    <span class="var">sessionid_example</span>: <span class="string">"U_2018-08-15t08:37:39.525z"</span>
+}</pre>
+
+        <p>
+                <a href="../../../api/v1/ping" class="pop">Ping</a> example with sessionid (officialy you don't have to use the sessionid).
+        </p>
+
+        <pre>
+<span class="function">const</span> <span class="var">request</span> = <span class="function_name">require</span>(<span class="string">'request'</span>);
+<span class="function_name">request</span>(<span class="string">`http://86.93.252.37:8080/api/v1/ping?sessionid=<span class="function">${</span><span class="var">sessionid</span><span class="function">}</span>`</span>, (<span class="var">error</span>, <span class="var">response</span>) <span class="function">=></span> {
+    <span class="comment">// handle everyting ...</span>
+});</pre>
+    </main>
+
+    <script>
+        var idk = window.localStorage.getItem('darkMode')
+        switch(idk) {
+            case null: {
+                window.localStorage.setItem('darkMode', false)
+                var element = document.querySelector('body')
+                element.classList.remove('dark')
+                break
+            }
+            case 'true': {
+                var element = document.querySelector('body')
+                element.classList.add('dark')
+                break
+            }
+            case 'false': {
+                var element = document.querySelector('body')
+                element.classList.remove('dark')
+                break
+            }
+        }
+    </script>
+</body>
+</html>

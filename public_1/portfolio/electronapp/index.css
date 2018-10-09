@@ -1,0 +1,10 @@
+header::before {
+    background-image: url(../../img/);
+    /*
+        TODO: zoek goed plaatje
+    */
+}
+
+header div {
+    /*color: #ffffff;*/
+}

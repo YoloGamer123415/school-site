@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Comfortaa|PT+Mono" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="./" class="selected">Docs</a></li>
+            <ul>
+                <li><a href="./ping">Ping</a></li>
+                <li><a href="./authenticate">Authenticate</a></li>
+                <li><a href="#">item</a></li>
+            </ul>
+            <li><a href="../settings">Settings</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>JB API Docs</h1>
+        </div>
+
+        <p>
+            Using this <a href="../api" class="pop">API</a> you can do absolutely nothing. It's just an API to test useless things, because I'm still learning JavaScript and such.
+        </p>
+    </main>
+
+    <script>
+        var idk = window.localStorage.getItem('darkMode')
+        switch(idk) {
+            case null: {
+                window.localStorage.setItem('darkMode', false)
+                var element = document.querySelector('body')
+                element.classList.remove('dark')
+                break
+            }
+            case 'true': {
+                var element = document.querySelector('body')
+                element.classList.add('dark')
+                break
+            }
+            case 'false': {
+                var element = document.querySelector('body')
+                element.classList.remove('dark')
+                break
+            }
+        }
+    </script>
+</body>
+</html>

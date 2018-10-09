@@ -1,0 +1,10 @@
+header::before {
+    background-image: url(../../img/AMSS_home.png);
+    /*
+        FIXME: fix mooiere foto
+    */
+}
+
+header div {
+    color: #ffffff;
+}

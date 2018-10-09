@@ -1,0 +1,85 @@
+div.contact_options {
+    width: 100%;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 50% 50%;
+}
+
+div.links {
+    padding: 30px;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 100%;
+}
+
+div.links figure {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+div.links figure.github {
+    background-color: #24292e;
+}
+
+div.links figure.github section h1,
+div.links figure.github section p,
+div.links figure.github section a.btn {
+    color: #ffffff !important;
+}
+
+div.links figure.insta {
+    background-color: #fafafa;
+}
+
+div.links figure.insta section h1,
+div.links figure.insta section p,
+div.links figure.insta section a.btn {
+    color: #262626 !important;
+}
+
+div.links figure.gmail {
+    background-color: #d93025;
+}
+
+div.links figure.gmail section h1,
+div.links figure.gmail section p,
+div.links figure.gmail section a.btn {
+    color: #202124 !important;
+}
+
+div.links figure.icloud {
+    background-color: #cae8fb;
+}
+
+div.links figure.icloud section h1,
+div.links figure.icloud section p,
+div.links figure.icloud section a.btn {
+    color: #333333 !important;
+}
+
+div.links figure.wa {
+    background-color: #1ebea5;
+}
+
+div.links figure.wa section h1,
+div.links figure.wa section p,
+div.links figure.wa section a.btn {
+    color: #ffffff !important;
+}
+
+div.links figure section h1 {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+div.form {
+    padding: 30px;
+}
+
+div.form div.wrapper form {
+    width: calc(100% - 2 * (20px + 10px));
+    padding: 20px;
+    margin: 10px;
+}

@@ -1,2 +1,2 @@
 # school-site
-This is a site for a school project
+This is an site for a school project

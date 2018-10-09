@@ -1,0 +1,9 @@
+paralax.img_first_site {
+    min-height: 100vh;
+    background-image: url(../img/home_page_first_site.png);
+}
+
+paralax div {
+    height: 100vh;
+    color: #ffffff;
+}

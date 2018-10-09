@@ -1,0 +1,7 @@
+header::before {
+    background-image: url(../../img/code_school_project.png);
+}
+
+header div {
+    color: #ffffff;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Baloo+Tammudu|Comfortaa|PT+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Portfolio | JB</title>
+</head>
+<body>
+    <header>
+        <div>
+            <ul>
+                <li><a class="not" href="../">Home</a></li>
+                <li><a class="not" href="./" class="selected">Projecten</a></li>
+                <li><a class="not" href="#">item</a></li>
+                <li><a class="not" href="#">item</a></li>
+                <li><a class="not" href="../contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="background">
+        <section>
+            <h1>Projecten</h1>
+            <p>Al mijn projecten</p>
+        </section>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="text">
+                <p>
+                    Hieronder heb ik al mijn projecten uitgestald. Het heeft me een tijdje gekost om ze allemaal weer naar boven te halen, maar het is me uiteindelijk gelukt. Het zijn er redelijk wat, dus ga er goed voor zitten en neem de tijd om het allemaal door te lezen en ze allemaal goed te bekijken.
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Eerste website</h1>
+            </div>
+
+            <div class="text_image">
+                <div class="image left">
+                    <span>De homepage van mijn eerste site</span>
+                    <div class="wrap_around"></div>
+                    <img class="w60" src="../img/home_page_first_site.png" alt="home_page_first_site" onclick="viewBigImage('../img/home_page_first_site.png', 'De homepage van mijn eerste site')">
+                </div>
+
+                <p>
+                    Dit is hem, mijn eerste <span class="pop b">kotslelijke</span> website. Het is een website waar je eigenlijk allemaal nutteloze dingen kunt vinden, die je hieronder waarschijnlijk ook nog wel tegenkomt. Ik heb het design van de website gemaakt door middel van een framework, genaamd <a class="materialize not" target="_blank" href="https://materializecss.com">Materialize</a>.<br>
+                    <br>
+                    De hele site is zwart met een roze achtige kleur, wat ik er nu echt niet meer mooi uit vind zien. Waar ik nu al helemaal niet meer tegen kan, is die roze box in het midden van de landingpage. Het is t&eacute; vel en trekt gelijk de aandacht van de rest van de pagina af, omdat de box zo opvalt. Ook ging ik te ver met alle kleurtjes enzo, wat je kan zien in aan de <code>&lt; html /&gt;</code>, <code>{ javascript }</code> en <code>{ css }</code> in de tekst onder de te velle box. Verder had je onderaan de pagina nog een footer, ook weer vel roze, wat gewoon zeer deed aan je ogen, want hij was ongeveer de helft van je scherm hoog.
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Tweede site</h1>
+            </div>
+
+            <div class="text_image">
+                <div class="image right">
+                    <span>De landingpage van de tweede site</span>
+                    <div class="wrap_around"></div>
+                    <img class="w60" src="../img/AMSS_home.png" alt="AMSS_home" onclick="viewBigImage('../img/AMSS_home.png', 'De landingpage van de tweede site')">
+                </div>
+
+                <p>
+                    Zoals je kan zien, begint het gelijk weer goed. Het heeft nog steeds die kotslelijke roze kleur. Verder is de naam ook een beetje beschamend, want het slaat eigenlijk nergens op.<br>
+                    <br>
+                    De bedoeling van de <span class="pop">Automatic Mail Spamming System</span> (AMSS) was dat je een emailadres, onderwerp, bericht en het aantal keer dat de mail verzonden moest worden invulde en dan werdt de mail het opgegeven aantal keren verstuurd. Veel heb je er niet aan, maar het was meer om te kijken hoe ik kon communiceren tussen server en client (ik gebruikte <a target="_blank" class="node not" href="https://nodejs.org">NodeJS</a> en <a target="_blank" href="https://socket.io/" class="socket not">Socket.IO</a>). Om de mailtjes te versturen gebruikte ik <span class="pop">Nodemailer</span>, een module voor NodeJS. Serverside had ik een loop, met een delay van 2000 miliseconden (ms). Dat betekend dat iedere twee seconden, 1 mail wordt verzonden. Dit gaat zo sloom omdat Gmail een beveiliging heeft. Wanneer ik mails verstuurde met een delay van ongeveer 10ms kreeg ik na ongeveer 90 mailtjes verstuurd te hebben een error dat de mail niet meer verzonden kon worden, waarschijnlijk omdat ik er te veel achter elkaar stuurde. Maar omdat het zo sloom moest, gaat mensen vol spammen dus ook slomer. Als je 1000 mailtjes wilde versturen, moets je iets langen wachten dan een half uur en dit is natuurlijk veels te lang, dus ik heb het systeem nooit meer gebruikt.
+                </p>
+            </div>
+
+            <div class="title">
+                <h1>Molmassa site</h1>
+            </div>
+
+            <div class="text_image">
+                <div class="image left">
+                    <span>De homepage van de molmassa site</span>
+                    <div class="wrap_around"></div>
+                    <img src="../img/molmassa_home_page.png" alt="molmassa_home_page" class="w60" onclick="viewBigImage('../img/molmassa_home_page.png', 'De homepage van de molmassa site')">
+                </div>
+
+                <p>
+                    Dit was &eacute;&eacute;n van de eerste site's waar ik JavaScript heb gebruikt. Het is een site om de <a target="_blank" href="https://nl.wikipedia.org/wiki/Molaire_massa#Molaire_massa_van_elementen">molmassa</a> van &eacute;&eacute;n of meerdere moleculen te berekenen. Ik had het idee om dit te maken toen we met scheikunde op school de molmassa van moleculen en dergelijke moesten berekenen, maar ik was te lui om ze op te zoeken in <a href="https://nl.wikipedia.org/wiki/Periodiek_systeem" target="_blank">het periodiek systeem der elementen</a>, dus kwam ik op het idee om deze site te maken. De meeste dingen heb ik niet zeld gedaan, maar een vriend, want ik vroeg steeds aan hem <q>Hoe moet ik dit doen?</q> en dan kwam hij met een oplossing. Uiteindelijk heb ik er wel wat van geleerd, ookal heb ik niet alles zelf gedaan. Ik heb de site eigenlijk ook nooit gebruikt.<br>
+                    De site werkt als volgt: je hebt drie knoppen;
+                </p>
+                
+                <ul>
+                    <li>Een knop met <q>Voeg een atoom toe</q></li>
+                    <li>Een knop met <q>Verwijder een atoom</q></li>
+                    <li>Een knop met <q>Bereken molmassa</q></li>
+                </ul>
+
+                <p class="not">
+                    Wanneer je op de knop <q>Voeg een atoom toe</q> drukt krijg je twee extra input's waar je een atoom en zijn aantal in kan vullen. Als je dan op de <q>Verwijder een atoom</q> knop drukt, verwijder je de onderste atoom. Wanneer je uiteindelijk op de <q>Bereken molmassa</q> knop drukt, wordt de molmassa van de opgegeven atomen berekend.<br>
+                </p>
+
+                <p class="note not">Als je de site wilt bekijken en eventueel uitproberen, klik dan <a target="_blank" href="http://molmassa.000webhostapp.com">hier</a>.</p>
+            </div>
+        </div>
+    </main>
+    
+    <div id="view_image" class="hidden"></div>
+    <input type="text" class="hidden_input" id="hidden_input">
+
+    <footer>
+        <div class="top">
+            <div class="info">
+                <p>Waar je me ook kunt vinden:</p>
+            </div>
+
+            <div class="contact">
+                <a target="_blank" href="https://www.instagram.com/joram_buitenhuis"><img src="../img/instagram_logo.ico" alt="instagram" class="insta"></a>
+                <a target="_blank" href="https://github.com/YoloGamer123415"><img src="../img/github_logo.svg" alt="github" class="github"></a>
+                <a href="mailto:joram03@icloud.com"><img src="../img/mail_icon.png" alt="mail" class="mail"></a>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <p>
+                All rights reserved &copy;2018-2019, designd door Joram Buitenhuis
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+div.contact_items {
+    margin: 20px;
+    width: calc(100% - 2 * (20px));
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div.contact_items div.items {
+    width: 100%;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 100%;
+}
+
+div.contact_items div.items figure {
+    width: calc(100% - 2 * (20px));
+    min-height: calc(100px - 2 * (20.005px));
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(101, 159, 252, 0.75);
+    transform: scale(1);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    transition:
+        transform .4s,
+        box-shadow .4s;
+}
+
+div.contact_items div.items figure.github {
+    background-color: #24292e;
+}
+
+div.contact_items div.items figure.github section h1,
+div.contact_items div.items figure.github section p,
+div.contact_items div.items figure.github section a.see_more {
+    color: #ffffff !important;
+}
+
+div.contact_items div.items figure.insta {
+    background-color: #fafafa;
+}
+
+div.contact_items div.items figure.insta section h1,
+div.contact_items div.items figure.insta section p,
+div.contact_items div.items figure.insta section a.see_more {
+    color: #262626 !important;
+}
+
+div.contact_items div.items figure.gmail {
+    background-color: #d93025;
+}
+
+div.contact_items div.items figure.gmail section h1,
+div.contact_items div.items figure.gmail section p,
+div.contact_items div.items figure.gmail section a.see_more {
+    color: #202124 !important;
+}
+
+div.contact_items div.items figure.icloud {
+    background-color: #cae8fb;
+}
+
+div.contact_items div.items figure.icloud section h1,
+div.contact_items div.items figure.icloud section p,
+div.contact_items div.items figure.icloud section a.see_more {
+    color: #333333 !important;
+}
+
+div.contact_items div.items figure.wa {
+    background-color: #1ebea5;
+}
+
+div.contact_items div.items figure.wa section h1,
+div.contact_items div.items figure.wa section p,
+div.contact_items div.items figure.wa section a.see_more {
+    color: #ffffff !important;
+}
+
+div.contact_items div.items figure section h1 {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+div.contact_items div.items figure section a.see_more {
+    display: flex;
+    display: -webkit-flex;
+    color: #000000;
+    text-decoration: none;
+    font-size: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #4684d7;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    transition:
+        background-color .7s,
+        border .7s;
+}
+
+div.contact_items div.items figure section a.see_more:hover {
+    background-color: #4684d7;
+    border: 2px solid rgba(101, 159, 252, 0.75);
+    transition:
+        background-color .7s,
+        border .7s;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 601px) {
+    div.contact_items div.items {
+        width: 600px;
+        grid-template-columns: repeat(2, calc(100% / 2));
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    div.contact_items div.items {
+        width: 900px;
+        grid-template-columns: repeat(3, calc(100% / 3));
+    }
+
+    div.contact_items div.items figure:hover {
+        transform: scale(1.1);
+        -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+        transition:
+            transform .4s,
+            box-shadow .4s;
+    }
+}

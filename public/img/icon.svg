@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Custom_Size_1);
+      }
+
+      .cls-2 {
+        fill: #30a3e9;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #252525;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #f8f8f8;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Custom_Size_1">
+      <rect width="1024" height="1024"/>
+    </clipPath>
+  </defs>
+  <g id="Custom_Size_1" data-name="Custom Size – 1" class="cls-1">
+    <rect class="cls-4" width="1024" height="1024"/>
+    <path id="Path_3" data-name="Path 3" class="cls-2" d="M1705.151,268.136c0,532.116.065,509.739,0,533.338-.2,25.806-9.9,239.563-226.433,238.336s-231.665-238.336-231.665-238.336l82.585,1.759s2.678,151.693,149.079,150.8,136.636-152.563,136.636-152.563V268.136Z" transform="translate(-1181.466 -142.201)"/>
+    <path id="Path_4" data-name="Path 4" class="cls-2" d="M1280.444,273.2v771.087h105.11s324.082,20.524,327.2-203.5-253.728-201.048-253.728-201.048h0S1644.2,654.094,1642.639,463.1s-257.085-189.9-257.085-189.9Z" transform="translate(-753.785 -146.901)"/>
+    <path id="Path_5" data-name="Path 5" class="cls-3" d="M1351.624,871.32V576.037s267.813-10.182,269.563,149.823S1351.624,871.32,1351.624,871.32Z" transform="translate(-740.203 -39.038)"/>
+    <path id="Path_6" data-name="Path 6" class="cls-3" d="M1351.624,829.975V576.019s209.359-8.757,210.727,128.855S1351.624,829.975,1351.624,829.975Z" transform="translate(-740.155 -382.879)"/>
+  </g>
+</svg>

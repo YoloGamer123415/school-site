@@ -1,0 +1,10 @@
+header::before {
+    background-image: url(../../img/code_from_bot.png);
+    /*
+        FIXME: verander in het goede plaatje
+    */
+}
+
+header div {
+    color: #ffffff;
+}

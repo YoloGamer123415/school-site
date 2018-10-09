@@ -1,0 +1,233 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 50vh 0 5vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+header div {
+    margin-top: -100px;
+    color: #000000;
+}
+
+header div h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 300%;
+}
+
+header div p {
+    margin-top: -50px;
+    font-family: 'Comfortaa', cursive;
+}
+
+header,
+header::before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: .2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+main {
+    min-height: 100vh;
+    position: relative;
+    color: #ffffff;
+    background: #7ac6ce;
+}
+
+main * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    color: #000000;
+}
+
+main p:not([class=not])::first-letter {
+    font-size: 200%;
+}
+
+a {
+    color: #3c7cd6;
+}
+
+a:hover {
+    color: #2f66b3;
+}
+
+div.header {
+    position: sticky;
+    top: 0;
+    height: 65px;
+    width: 100vw;
+    background-color: #88a7da;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+    z-index: 100;
+}
+
+div.header div {
+    width: 1000px;
+}
+
+div.header div ul {
+    height: 100%;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(5, 20%);
+    list-style-type: none;
+}
+
+div.header div ul li {
+    height: 100%;
+}
+
+div.header div ul li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .7s;
+}
+
+div.header div ul li a:hover {
+    background-color: rgba(255, 255, 255, .25);
+    transition: background-color .7s;
+}
+
+div.main {
+    padding: 20px;
+}
+
+div.btn_wrapper {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #88a7da;
+    -webkit-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.25);
+    color: #000000;
+}
+
+footer * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+footer div.top {
+    min-height: 150px;
+    width: calc(100% - 2 * (20px));
+    padding: 20px;
+    display: grid;
+    display: -ms-grid;
+    grid-template:
+        'info' auto
+        'contact' auto
+        / 100%;
+}
+
+footer div.top div.info {
+    grid-area: info;
+    height: auto;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+div.contact {
+    grid-area: contact;
+    height: 100%;
+    width: auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.contact a:not(:first-child) {
+    margin-left: 20px;
+}
+
+div.contact img {
+    height: 50px;
+}
+
+footer div.bottom {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .25);
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.bottom p {
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        overflow: hidden;
+    }
+
+    header::before {
+        transform: translateZ(-1px) scale(2);
+    }
+}

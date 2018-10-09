@@ -1,0 +1,7 @@
+header::before {
+    background-image: url(../../img/);
+}
+
+header div {
+    /*color: #ffffff;*/
+}

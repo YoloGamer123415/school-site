@@ -1,0 +1,10 @@
+header::before {
+    background-image: url(../../img/home_page_first_site.png);
+    /*
+        FIXME: fix mooiere foto
+    */
+}
+
+header div {
+    color: #ffffff;
+}

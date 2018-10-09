@@ -1,0 +1,170 @@
+div.show_projects {
+    margin: 20px;
+    width: calc(100% - 2 * (20px));
+    height: auto;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+}
+
+div.show_projects div.items {
+    width: 100%;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 100%;
+}
+
+div.show_projects div.items figure {
+    width: calc(100% - 2 * (20px));
+    min-height: calc(100px - 2 * (20.005px));
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(101, 159, 252, 0.75);
+    transform: scale(1);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    transition:
+        transform .4s,
+        box-shadow .4s;
+}
+
+div.show_projects div.items figure section h1 {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+div.show_projects div.items figure section a.see_more {
+    display: flex;
+    display: -webkit-flex;
+    color: #000000;
+    text-decoration: none;
+    font-size: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #4684d7;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    transition:
+        background-color .7s,
+        border .7s;
+}
+
+div.show_projects div.items figure.eigen_site {
+    background-color: #ee6e73;
+}
+
+div.show_projects div.items figure.eigen_site section h1,
+div.show_projects div.items figure.eigen_site section p,
+div.show_projects div.items figure.eigen_site section a.see_more {
+    color: #000000 !important;
+}
+
+div.show_projects div.items figure.molmassa {
+    background-color: rgb(200, 200, 200);
+}
+
+div.show_projects div.items figure.molmassa section h1,
+div.show_projects div.items figure.molmassa section p,
+div.show_projects div.items figure.molmassa section a.see_more {
+    color: #000000 !important;
+}
+
+div.show_projects div.items figure.dc {
+    background-color: #7289da;
+}
+
+div.show_projects div.items figure.dc section h1,
+div.show_projects div.items figure.dc section p,
+div.show_projects div.items figure.dc section a.see_more {
+    color: #2c2f33 !important;
+}
+
+div.show_projects div.items figure.electron {
+    background-color: #2f3241;
+}
+
+div.show_projects div.items figure.electron section h1,
+div.show_projects div.items figure.electron section p,
+div.show_projects div.items figure.electron section a.see_more {
+    color: #74b1be !important;
+}
+
+div.show_projects div.items figure.vysix {
+    background-color: #1a617f;
+}
+
+div.show_projects div.items figure.vysix section h1,
+div.show_projects div.items figure.vysix section p,
+div.show_projects div.items figure.vysix section a.see_more {
+    color: #f2f2f2 !important;
+}
+
+div.show_projects div.items figure.vakantie {
+    background-color: #639fff;
+}
+
+div.show_projects div.items figure.vakantie section h1,
+div.show_projects div.items figure.vakantie section p,
+div.show_projects div.items figure.vakantie section a.see_more {
+    color: #ffffff !important;
+}
+
+div.show_projects div.items figure.magister {
+    background-color: #0096db;
+}
+
+div.show_projects div.items figure.magister section h1,
+div.show_projects div.items figure.magister section p,
+div.show_projects div.items figure.magister section a.see_more {
+    color: #222222 !important;
+}
+
+div.show_projects div.items figure.school {
+    background-color: #88a7da;
+}
+
+div.show_projects div.items figure.school section h1,
+div.show_projects div.items figure.school section p,
+div.show_projects div.items figure.school section a.see_more {
+    color: #000000 !important;
+}
+
+div.show_projects div.items figure section a.see_more:hover {
+    background-color: #4684d7;
+    border: 2px solid rgba(101, 159, 252, 0.75);
+    transition:
+        background-color .7s,
+        border .7s;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 601px) {
+    div.show_projects div.items {
+        width: 600px;
+        grid-template-columns: repeat(2, calc(100% / 2));
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    div.show_projects div.items {
+        width: 900px;
+        grid-template-columns: repeat(3, calc(100% / 3));
+    }
+
+    div.show_projects div.items figure:hover {
+        transform: scale(1.1);
+        -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+        transition:
+            transform .4s,
+            box-shadow .4s;
+    }
+}
